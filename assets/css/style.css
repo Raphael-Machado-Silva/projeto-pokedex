@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', arial, cursive;
+}
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #6e6ee4, #ffffffd5);
+    min-height: 100vh;
+}
+
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+img.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+img.pokemon_image{
+    position: absolute;
+    left: 37.5%;
+    bottom: 53%;
+}

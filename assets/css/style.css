@@ -46,3 +46,23 @@ img.pokemon_image{
     color: #3b3b3b;
     text-transform: capitalize;
 }
+
+form{
+    position: absolute;
+    width: 65%;
+    margin: auto;
+    top: 65%; left: 13.5%;
+}
+
+.input_search{
+    width: 75%;
+    padding: 3.2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: clamp(10px, 5vw, 20px) ;
+    color: #1b1b1b;
+    text-align: center;
+    box-shadow: -1px 1px 3px #333  ;
+}

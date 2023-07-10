@@ -27,6 +27,22 @@ img.pokedex{
 
 img.pokemon_image{
     position: absolute;
-    left: 37.5%;
-    bottom: 53%;
+    left: 50%;
+    bottom: 55%;
+    transform: translate(-63%,20%); /* Opicional está tag */
+    height: 17%;
+}
+
+.pokemon_data{
+    position: absolute;
+    font-weight: 600;
+    color: #3b3b3b;
+    font-size: clamp(10px, 5vw, 28px);
+    top: 54.4%;
+    right: 27%;
+}
+
+.pokemon_name{
+    color: #3b3b3b;
+    text-transform: capitalize;
 }

@@ -27,6 +27,7 @@ img.pokedex{
 
 img.pokemon_image{
     position: absolute;
+    cursor: pointer;
     left: 50%;
     bottom: 55%;
     transform: translate(-63%,20%); /* Opicional está tag */
@@ -55,7 +56,7 @@ form{
 }
 
 .input_search{
-    width: 75%;
+    width: 77%;
     padding: 3.2%;
     outline: none;
     border: 2px solid #333;
@@ -64,5 +65,34 @@ form{
     font-size: clamp(10px, 5vw, 20px) ;
     color: #1b1b1b;
     text-align: center;
-    box-shadow: -1px 1px 3px #333  ;
+    box-shadow: -3px 3px 0px #888, -5px 5px 0px black;
+}
+
+
+.buttons{
+    position: absolute;
+    bottom: 10.5%;
+    left: 50%;
+    transform: translate(-55%,20%);
+    width: 65%;
+    display: flex;
+    gap: 5% ;
+}
+
+.button{
+    cursor: pointer;
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: -2px 3px 0px rgba(0, 0, 0, 0.644), -3px 4px 0px rgba(0, 0, 0, 0.788);
+    padding: 4%;
+    font-size: clamp(10px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #333;
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 rgba(0, 0, 0, 0.452);
+    font-size: 0.9rem;
 }

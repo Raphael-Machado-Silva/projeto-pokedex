@@ -11,6 +11,9 @@ body{
     text-align: center;
     background-image: linear-gradient(to bottom, #6e6ee4, #ffffffd5);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 main{

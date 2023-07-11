@@ -30,7 +30,8 @@ const renderPokemon = async (pokemon) => { /*MOSTRAR OS DADOS (NOME, NÚMERO e G
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];  
         pokemonImage.style.display = 'block' ;
         input.value = '';
-                            
+        searchPokemon = data.id;
+
     } else{
         pokemonName.innerHTML = 'Não Encontrado :(';
         pokemonNumber.innerHTML = '';
@@ -45,11 +46,15 @@ form.addEventListener('submit', (event) => { /*MUDAR OS DADOS DE ACORDO COM O IN
 
 
 buttonPrev.addEventListener('click', () => { 
-
+    if(searchPokemon > 1) {
+        searchPokemon -=1; 
+        renderPokemon(searchPokemon);
+    } 
 });
 
 buttonNext.addEventListener('click', () => { 
-
+    searchPokemon += 1;
+    renderPokemon(searchPokemon);
 });
 
 renderPokemon(searchPokemon);

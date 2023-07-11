@@ -1,6 +1,8 @@
 const pokemonName = document.querySelector('.pokemon_name');
 const pokemonNumber = document.querySelector('.pokemon_number');
 const pokemonImage = document.querySelector('.pokemon_image');
+const form = document.querySelector('.form');
+const input = document.querySelector('.input_search');
 
 const fetchPokemon = async (pokemon) => { /*PEGAR OS DADOS DO POKEMON*/
  
@@ -9,7 +11,7 @@ const fetchPokemon = async (pokemon) => { /*PEGAR OS DADOS DO POKEMON*/
     return data;
 }
 
-const renderPokemon = async (pokemon) => { /*MOSTRAR OS DADOS (NOME)*/
+const renderPokemon = async (pokemon) => { /*MOSTRAR OS DADOS (NOME, NÚMERO e GIF)*/
     const data = await fetchPokemon(pokemon);
 
     pokemonName.innerHTML = data.name;
@@ -17,4 +19,8 @@ const renderPokemon = async (pokemon) => { /*MOSTRAR OS DADOS (NOME)*/
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
 }
 
-renderPokemon('26');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    renderPokemon(input.value);
+});

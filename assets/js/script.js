@@ -1,4 +1,7 @@
-const fetchPokemon = (pokemon) => {
+const fetchPokemon = async (pokemon) => {
  
-    const APIResponse = fetch(`https://pokeapi.co/api/v2/${pokemon}`);
+    const APIResponse = await fetch(`https://pokeapi.co/api/v2/${pokemon}`);
+    console.log(APIResponse);
 }
+
+fetchPokemon();

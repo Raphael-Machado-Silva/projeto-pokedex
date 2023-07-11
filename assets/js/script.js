@@ -19,9 +19,9 @@ const renderPokemon = async (pokemon) => { /*MOSTRAR OS DADOS (NOME, NÚMERO e G
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
 }
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) => { /*MUDAR OS DADOS DE ACORDO COM O INPUT */
     event.preventDefault();
 
-    renderPokemon(input.value);
+    renderPokemon(input.value.toLowerCase());
     input.value = '';
 });
